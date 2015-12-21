@@ -24,7 +24,7 @@ public class JXParser {
     static InputStream input = null;
     static JSONObject jsonObj = null;
 
-    public JSONObject getJSON (String url) {
+    public JSONObject getJsonFromUrl (String url) {
 
         // make HTTP request
         try {
