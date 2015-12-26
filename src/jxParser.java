@@ -52,16 +52,16 @@ public class JXParser {
         try {
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(input, "iso-8859-1"), 8);
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sbuilder = new StringBuilder();
             String line = null;
 
             while ((line = reader.readLine()) != null) {
 
-                sb.append(line + "\n");
+                sbuilder.append(line + "\n");
             }
 
             input.close();
-            json = sb.toString();
+            json = sbuilder.toString();
 
         } catch (Exception e) {
 
